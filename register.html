@@ -17,6 +17,55 @@
     .divider::before, .divider::after { content: ''; flex: 1; border-bottom: 1px solid rgba(201, 169, 110, 0.2); }
     .divider:not(:empty)::before { margin-right: .5em; }
     .divider:not(:empty)::after { margin-left: .5em; }
+    .auth-link {
+      transition: color 0.25s ease, text-shadow 0.25s ease, text-decoration-color 0.25s ease;
+    }
+    .auth-link:hover {
+      color: var(--accent-hover) !important;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+      text-decoration-color: currentColor;
+      text-shadow: 0 0 10px rgba(201, 169, 110, 0.25);
+    }
+    .auth-card .form-control,
+    .auth-card .form-select {
+      color: var(--text-primary);
+      -webkit-text-fill-color: var(--text-primary);
+    }
+    .auth-card .form-control::placeholder {
+      color: rgba(255, 255, 255, 0.28);
+      opacity: 1;
+    }
+    [data-theme="light"] .auth-card .form-control::placeholder {
+      color: rgba(11, 15, 20, 0.35);
+    }
+    .auth-card .form-control:-webkit-autofill,
+    .auth-card .form-control:-webkit-autofill:hover,
+    .auth-card .form-control:-webkit-autofill:focus {
+      -webkit-text-fill-color: var(--text-primary);
+      transition: background-color 9999s ease-in-out 0s;
+    }
+    .terms-check {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      text-align: left;
+    }
+    .terms-check .form-check-input {
+      margin-top: 0.2rem;
+      border-color: rgba(201, 169, 110, 0.45);
+      box-shadow: none;
+      cursor: pointer;
+    }
+    .terms-check .form-check-input:checked {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+    .terms-check .form-check-label {
+      color: var(--text-secondary);
+      line-height: 1.6;
+      cursor: pointer;
+    }
     /* Mobile: Card Look */
     @media (max-width: 767px) {
       body { align-items: center; padding: 20px !important; }
@@ -77,6 +126,17 @@
           <label class="form-label text-secondary small">Confirm Master PassKey</label>
           <input type="password" class="form-control" placeholder="••••••••">
         </div>
+        <div class="col-12 mb-2">
+          <div class="form-check terms-check">
+            <input class="form-check-input" type="checkbox" id="termsConsent" required>
+            <label class="form-check-label small" for="termsConsent">
+              I agree to the
+              <a href="#" class="accent-text auth-link">Terms &amp; Conditions</a>
+              and
+              <a href="#" class="accent-text auth-link">Privacy Policy</a>.
+            </label>
+          </div>
+        </div>
         <div class="col-12">
           <button type="submit" class="btn btn-accent w-100 p-3">Submit Access Request</button>
         </div>
@@ -94,7 +154,7 @@
       </div>
 
       <div class="text-center mt-4">
-        <a href="login.html" class="text-secondary small">Already have access? Signal Login.</a>
+        <a href="login.html" class="text-secondary small auth-link">Already have access? Signal Login.</a>
       </div>
     </form>
   </div>

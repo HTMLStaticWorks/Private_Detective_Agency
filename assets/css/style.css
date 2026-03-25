@@ -214,6 +214,23 @@ a {
   color: var(--primary-color);
 }
 
+.h2-cyber-content .d-flex div:hover {
+    background-color: #0056b3 !important;
+    border-color: #0056b3 !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .h2-cyber-content .d-flex div:hover .px-4 {
+    background-color: #0056b3 !important;
+    color: #ffffff !important;
+  }
+  
+  .h2-cyber-content .d-flex div:hover .px-4:last-child {
+    background-color: #0056b3 !important;
+    color: #ffffff !important;
+  }
+
 /* Navbar */
 .navbar {
   height: var(--header-height);
@@ -232,6 +249,10 @@ a {
 .navbar.scrolled {
   height: 70px;
   background-color: var(--primary-color);
+}
+
+[data-theme="light"] .navbar-toggler .bi-list {
+  color: var(--accent-color) !important;
 }
 
 .navbar-brand {
@@ -1189,6 +1210,8 @@ footer {
   width: 100%;
   max-width: 550px;
   margin: 0 auto;
+  border-radius: 30px;
+  background: #08101a;
 }
 
 .img-glow {
@@ -1204,17 +1227,19 @@ footer {
 }
 
 .hero-agent-img {
+  display: block;
   width: 100%;
   height: auto;
   border-radius: 30px;
   box-shadow: 0 40px 100px rgba(0,0,0,0.6);
   border: 1px solid rgba(201, 169, 110, 0.2);
-  transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+  transform-origin: center center;
   transition: transform 0.5s ease;
 }
 
-.hero-agent-img:hover {
-  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+.hero-img-container:hover .hero-agent-img {
+  transform: perspective(1000px) rotateY(-10deg) rotateX(5deg) scale(1.05);
 }
 
 .stat-bubble {
@@ -1283,15 +1308,123 @@ footer {
   .hero-title-v3 { font-size: 3rem; }
   .hero-agent-img { transform: none; margin-bottom: 3rem; }
   .hero-bg-accent { width: 100%; top: 20%; }
+  
+  /* Center heading and accordion buttons in Intelligence Lifecycle section for tablet */
+  .intelligence-lifecycle-section .display-5,
+  .intelligence-lifecycle-section .accordion-button,
+  .intelligence-lifecycle-section h5 {
+    text-align: center !important;
+  }
+  
+  .intelligence-lifecycle-section .display-5 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  /* Center heading and button in Tactical Excellence section for tablet */
+  .tactical-excellence-section .display-5,
+  .tactical-excellence-section h5 {
+    text-align: center !important;
+  }
+  
+  .tactical-excellence-section .reveal.animate-delay-2 {
+    text-align: center !important;
+  }
+  
+  .tactical-excellence-section .btn-outline-accent {
+    display: inline-block !important;
+  }
+  
+  /* Center heading and button in Operational Command section for tablet */
+  .operational-command-section .reveal-right {
+    text-align: center !important;
+  }
+  
+  .operational-command-section .display-4,
+  .operational-command-section h5 {
+    text-align: center !important;
+  }
+  
+  .operational-command-section .btn-outline-accent {
+    display: inline-block !important;
+  }
+  
+  /* Center heading in Field Operations Protocol section for tablet */
+  .field-operations-section .reveal-left {
+    text-align: center !important;
+  }
+  
+  .field-operations-section .display-4,
+  .field-operations-section h5 {
+    text-align: center !important;
+  }
+  
+  /* Position Signal Intelligence card at bottom right on tablet */
+  .global-signal-section .h2-signal-container {
+    position: relative !important;
+    min-height: 400px !important;
+  }
+  
+  .global-signal-section .h2-signal-card {
+    position: absolute !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 300px !important;
+    max-width: 90% !important;
+  }
 }
 
 /* Final Responsive Overrides */
 @media (max-width: 991px) {
   .navbar-brand { font-size: 1.2rem; }
   .brand-logo { height: 30px; }
+  
+  /* Center heading and button in Corporate Shield section for tablet */
+  .corporate-shield-section .reveal {
+    text-align: center !important;
+  }
+  
+  .corporate-shield-section .display-4,
+  .corporate-shield-section h5 {
+    text-align: center !important;
+  }
+  
+  .corporate-shield-section .btn-accent {
+    display: inline-block !important;
+  }
+  
+  /* Center headings in Nightshade section for tablet */
+  .nightshade-section .display-5,
+  .nightshade-section h5 {
+    text-align: center !important;
+  }
 }
 
 @media (max-width: 768px) {
+  .global-signal-section .h2-signal-card {
+    min-height: 160px !important; /* Slightly increased height for mobile and tablet */
+  }
+  
+  /* Center heading and button in Corporate Shield section for mobile */
+  .corporate-shield-section .reveal {
+    text-align: center !important;
+  }
+  
+  .corporate-shield-section .display-4,
+  .corporate-shield-section h5 {
+    text-align: center !important;
+  }
+  
+  .corporate-shield-section .btn-accent {
+    display: inline-block !important;
+  }
+  
+  /* Center headings in Nightshade section for mobile */
+  .nightshade-section .display-5,
+  .nightshade-section h5 {
+    text-align: center !important;
+  }
+}
   .hero-v2 { padding-top: 100px; text-align: center; }
   .hero-v2 .hero-label { font-size: 0.7rem; padding: 6px 15px; margin-bottom: 1rem; }
   .hero-v2 .hero-title { font-size: 2rem; margin-bottom: 1.5rem; }
@@ -1304,6 +1437,85 @@ footer {
   section { padding: 2.5rem 0 !important; }
   .feature-card { padding: 1.25rem; }
   
+  /* Center heading and accordion buttons in Intelligence Lifecycle section for mobile/tablet */
+  .intelligence-lifecycle-section .display-5,
+  .intelligence-lifecycle-section .accordion-button,
+  .intelligence-lifecycle-section h5 {
+    text-align: center !important;
+  }
+  
+  .intelligence-lifecycle-section .display-5 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  /* Center heading and button in Tactical Excellence section for mobile */
+  .tactical-excellence-section .display-5,
+  .tactical-excellence-section h5 {
+    text-align: center !important;
+  }
+  
+  .tactical-excellence-section .reveal.animate-delay-2 {
+    text-align: center !important;
+  }
+  
+  .tactical-excellence-section .btn-outline-accent {
+    display: inline-block !important;
+  }
+  
+  /* Center heading and button in Operational Command section for mobile */
+  .operational-command-section .reveal-right {
+    text-align: center !important;
+  }
+  
+  .operational-command-section .display-4,
+  .operational-command-section h5 {
+    text-align: center !important;
+  }
+  
+  .operational-command-section .btn-outline-accent {
+    display: inline-block !important;
+  }
+  
+  /* Center heading in Field Operations Protocol section for mobile */
+  .field-operations-section .reveal-left {
+    text-align: center !important;
+  }
+  
+  .field-operations-section .display-4,
+  .field-operations-section h5 {
+    text-align: center !important;
+  }
+  
+  /* Position Signal Intelligence card at bottom right on mobile and tablet */
+  .global-signal-section .h2-signal-container {
+    position: relative !important;
+  }
+  
+  .global-signal-section .h2-signal-card {
+    position: absolute !important;
+    bottom: 15px !important;
+    right: 15px !important;
+    width: 280px !important;
+    max-width: 85% !important;
+    padding: 20px !important;
+  }
+  
+  .global-signal-section .h2-signal-card h5 {
+    font-size: 1.1rem !important;
+    margin-bottom: 3px !important;
+  }
+  
+  .global-signal-section .h2-signal-card h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 3px !important;
+  }
+  
+  .global-signal-section .h2-signal-card p {
+    font-size: 0.8rem !important;
+    line-height: 1.3 !important;
+  }
+  
   .stat-overlay {
     position: absolute !important;
     bottom: 0 !important;
@@ -1313,6 +1525,188 @@ footer {
     text-align: center !important;
     border-radius: 0 0 12px 12px !important;
     font-size: 0.9rem !important;
+  }
+  .strategic-hub-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1a2634 100%) !important;
+    padding: 80px 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+  
+  .strategic-card {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--accent-color) !important;
+    border-radius: 20px !important;
+    padding: 40px !important;
+    box-shadow: 0 20px 60px rgba(201, 169, 110, 0.3) !important;
+    position: relative !important;
+    transform: translateX(-50px) !important;
+    opacity: 0 !important;
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  }
+  
+  .strategic-card.reveal-left.active {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+  }
+  
+  .strategic-icon {
+    width: 60px !important;
+    height: 60px !important;
+    background: rgba(201, 169, 110, 0.1) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    animation: shieldPulse 2s infinite !important;
+  }
+  
+  @keyframes shieldPulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(201, 169, 110, 0.3); }
+    50% { transform: scale(1.1); box-shadow: 0 0 15px rgba(201, 169, 110, 0.5); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(201, 169, 110, 0.3); }
+  }
+  
+  .strategic-features {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 20px 0 !important;
+  }
+  
+  .strategic-features li {
+    background: rgba(201, 169, 110, 0.1) !important;
+    padding: 15px 20px !important;
+    border-radius: 8px !important;
+    margin-bottom: 10px !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .strategic-features li:hover {
+    background: rgba(201, 169, 110, 0.2) !important;
+    transform: translateY(-3px) !important;
+  }
+  
+  .intelligence-globe {
+    position: relative !important;
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto 30px !important;
+  }
+  
+  .globe-outer {
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(201, 169, 110, 0.1) !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    animation: globeRotate 20s linear infinite !important;
+  }
+  
+  .globe-inner {
+    width: 80% !important;
+    height: 80% !important;
+    background: linear-gradient(135deg, var(--accent-color) 0%, rgba(201, 169, 110, 0.3) 100%) !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  animation: innerGlow 3s ease-in-out infinite !important;
+  }
+  
+  @keyframes globeRotate {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  
+  @keyframes innerGlow {
+    0% { box-shadow: 0 0 30px rgba(201, 169, 110, 0.5); }
+    50% { box-shadow: 0 0 50px rgba(201, 169, 110, 0.8); }
+    100% { box-shadow: 0 0 30px rgba(201, 169, 110, 0.5); }
+  }
+  
+  /* Quantum Defense Systems Section */
+  .quantum-defense-section {
+    background: linear-gradient(135deg, #0f0f 0%, var(--primary-color) 100%) !important;
+    padding: 80px 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+  
+  .quantum-card {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--accent-color) !important;
+    border-radius: 20px !important;
+    padding: 40px !important;
+    box-shadow: 0 20px 60px rgba(201, 169, 110, 0.3) !important;
+    position: relative !important;
+    transform: translateY(50px) !important;
+    opacity: 0 !important;
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  }
+  
+  .quantum-card.reveal-zoom.active {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+  }
+  
+  .quantum-icon {
+    width: 60px !important;
+    height: 60px !important;
+    background: rgba(201, 169, 110, 0.1) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    animation: cpuPulse 2s infinite !important;
+  }
+  
+  @keyframes cpuPulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(201, 169, 110, 0.3); }
+    50% { transform: scale(1.1); box-shadow: 0 0 20px rgba(201, 169, 110, 0.5); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(201, 169, 110, 0.3); }
+  }
+  
+  .quantum-header h5,
+  .quantum-title h2 {
+    margin: 0 !important;
+  }
+  
+  .quantum-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+    margin-bottom: 30px !important;
+  }
+  
+  .quantum-item {
+    background: rgba(201, 169, 110, 0.1) !important;
+    padding: 20px !important;
+    border-radius: 12px !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .quantum-item:hover {
+    background: rgba(201, 169, 110, 0.2) !important;
+    transform: translateY(-3px) !important;
+  }
+  
+  .quantum-number {
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    color: var(--accent-color) !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .quantum-label {
+    font-size: 0.8rem !important;
+    color: var(--text-secondary) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
   }
   
   .hero-v2 .scroll-down {
@@ -1442,11 +1836,15 @@ html, body {
     display: block !important;
     width: 0;
     bottom: -5px;
+    opacity: 0;
+    box-shadow: none;
   }
 
   .navbar-expand-lg .nav-link:hover::after,
   .navbar-expand-lg .nav-link.active::after {
     width: 60% !important;
+    opacity: 1;
+    box-shadow: 0 0 8px var(--accent-color);
   }
 
   .navbar-expand-lg .nav-link:hover,

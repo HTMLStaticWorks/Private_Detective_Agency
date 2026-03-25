@@ -20,6 +20,14 @@
     .dashboard-body {
       background-color: #050709;
     }
+    [data-theme="light"] .dashboard-body {
+      background-color: var(--bg-body);
+    }
+    @media (min-width: 1200px) {
+      #sidebarToggle {
+        display: none !important;
+      }
+    }
     .status-badge {
       padding: 4px 10px;
       border-radius: 20px;
@@ -35,6 +43,10 @@
       background: rgba(255,255,255,0.02);
       padding: 1rem;
       border-radius: var(--border-radius);
+    }
+    [data-theme="light"] .chat-box {
+      background: var(--bg-body);
+      border: 1px solid var(--border-color);
     }
     .message {
       margin-bottom: 1rem;
@@ -54,6 +66,24 @@
       background: var(--secondary-color);
       color: white;
       border-end-start-radius: 0;
+    }
+    [data-theme="light"] .message-agent {
+      background: #e7edf4;
+      color: var(--text-primary);
+    }
+    @media (max-width: 767.98px) {
+      .dashboard-cases-scroll {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .dashboard-cases-table {
+        min-width: 720px;
+      }
+      .dashboard-cases-table th,
+      .dashboard-cases-table td {
+        white-space: nowrap;
+      }
     }
   </style>
 </head>
@@ -89,13 +119,13 @@
         </a>
       </li>
       <li class="nav-item mb-2">
-        <a href="pricing.html" class="nav-link rounded text-secondary">
+        <a href="#" class="nav-link rounded text-secondary">
           <i class="bi bi-credit-card me-2"></i> Billing
         </a>
       </li>
       <li class="nav-item mt-5">
           <hr class="border-secondary opacity-25">
-          <a href="login.html" class="nav-link text-danger">
+          <a href="index.html" class="nav-link text-danger">
             <i class="bi bi-box-arrow-left me-2"></i> Logout
           </a>
       </li>
@@ -121,8 +151,8 @@
       <div class="col-xl-8">
         <div class="feature-card h-auto mb-4">
           <h4 class="mb-4">Active Investigations</h4>
-          <div class="table-responsive">
-            <table class="table table-dark table-hover align-middle">
+          <div class="table-responsive dashboard-cases-scroll">
+            <table class="table table-dark table-hover align-middle dashboard-cases-table">
               <thead class="text-secondary">
                 <tr>
                   <th>Case ID</th>

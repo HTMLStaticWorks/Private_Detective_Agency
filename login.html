@@ -17,6 +17,34 @@
     .divider::before, .divider::after { content: ''; flex: 1; border-bottom: 1px solid rgba(201, 169, 110, 0.2); }
     .divider:not(:empty)::before { margin-right: .5em; }
     .divider:not(:empty)::after { margin-left: .5em; }
+    .auth-link {
+      transition: color 0.25s ease, text-shadow 0.25s ease, text-decoration-color 0.25s ease;
+    }
+    .auth-link:hover {
+      color: var(--accent-hover) !important;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+      text-decoration-color: currentColor;
+      text-shadow: 0 0 10px rgba(201, 169, 110, 0.25);
+    }
+    .auth-card .form-control,
+    .auth-card .form-select {
+      color: var(--text-primary);
+      -webkit-text-fill-color: var(--text-primary);
+    }
+    .auth-card .form-control::placeholder {
+      color: rgba(255, 255, 255, 0.28);
+      opacity: 1;
+    }
+    [data-theme="light"] .auth-card .form-control::placeholder {
+      color: rgba(11, 15, 20, 0.35);
+    }
+    .auth-card .form-control:-webkit-autofill,
+    .auth-card .form-control:-webkit-autofill:hover,
+    .auth-card .form-control:-webkit-autofill:focus {
+      -webkit-text-fill-color: var(--text-primary);
+      transition: background-color 9999s ease-in-out 0s;
+    }
     /* Mobile: Card Look */
     @media (max-width: 767px) {
       body { align-items: center; padding: 20px !important; }
@@ -59,7 +87,7 @@
       <div class="mb-4">
         <div class="d-flex justify-content-between align-items-baseline">
           <label class="form-label text-secondary small">Security PassKey</label>
-          <a href="#" class="accent-text small">Forgot PassKey?</a>
+          <a href="#" class="accent-text small auth-link">Forgot PassKey?</a>
         </div>
         <input type="password" class="form-control" placeholder="••••••••" required>
       </div>
@@ -78,7 +106,7 @@
 
       <div class="text-center">
         <span class="text-secondary small">Unauthorized access is monitored.</span>
-        <div class="mt-4"><a href="register.html" class="accent-text small">Request New Access Code</a></div>
+        <div class="mt-4"><a href="register.html" class="accent-text small auth-link">Request New Access Code</a></div>
       </div>
     </form>
   </div>

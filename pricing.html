@@ -20,6 +20,11 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <style>
+    .pricing-tiers-section .feature-card > .btn {
+      margin-top: auto;
+    }
+  </style>
 </head>
 <body>
 
@@ -48,8 +53,8 @@
               <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
           <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -69,14 +74,14 @@
     <img src="assets/images/vault.png" alt="Pricing Hero" class="hero-bg">
     <div class="hero-overlay"></div>
     <div class="container position-relative z-1 text-center">
-      <h5 class="accent-text text-uppercase mb-3 ls-2">Security Tiers</h5>
+      <h5 class="accent-text text-uppercase mb-3 ls-2" style="color: #ffffff !important;">Security Tiers</h5>
       <h1 class="display-3 text-white">Investment in Truth</h1>
-      <p class="lead text-white-50">Scalable intelligence solutions tailored to your security footprint.</p>
+      <p class="lead text-white">Scalable intelligence solutions tailored to your security footprint.</p>
     </div>
   </header>
 
   <!-- Section 1: Standard Tactical Grid (3 Cards) -->
-  <section class="py-5">
+  <section class="py-5 pricing-tiers-section">
     <div class="container py-5">
       <div class="text-center mb-5 reveal">
          <h5 class="accent-text text-uppercase mb-3 ls-2">Mission Tiers</h5>
@@ -121,10 +126,10 @@
             <h5 class="text-secondary small text-uppercase ls-2">Corporate Elite</h5>
             <h2 class="display-5 mb-4">$2,400<span class="fs-5 text-secondary">/fixed</span></h2>
             <ul class="list-unstyled text-secondary mb-5 small">
-              <li class="mb-3 text-white"><i class="bi bi-check2 accent-text me-2"></i> Multi-Unit Field Monitoring</li>
-              <li class="mb-3 text-white"><i class="bi bi-check2 accent-text me-2"></i> Advanced OSINT & DEEPWEB</li>
-              <li class="mb-3 text-white"><i class="bi bi-check2 accent-text me-2"></i> Dedicated Lead Agent</li>
-              <li class="mb-3 text-white"><i class="bi bi-check2 accent-text me-2"></i> Encrypted Video Vault Access</li>
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> Multi-Unit Field Monitoring</li>
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> Advanced OSINT & DEEPWEB</li>
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> Dedicated Lead Agent</li>
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> Encrypted Video Vault Access</li>
             </ul>
             <a href="contact.html" class="btn btn-accent w-100 py-3">Engual Force</a>
           </div>
@@ -153,11 +158,11 @@
     <div class="container py-5">
       <div class="row align-items-center g-5 flex-md-row-reverse">
          <div class="col-lg-6 reveal">
-            <h5 class="accent-text text-uppercase mb-3 ls-2">One-Time Missions</h5>
-            <h2 class="display-5 mb-4">Tactical <span class="accent-text">Asset Recovery</span></h2>
+            <h5 class="accent-text text-uppercase mb-3 ls-2 text-center text-lg-start">One-Time Missions</h5>
+            <h2 class="display-5 mb-4 text-center text-lg-start">Tactical <span class="accent-text">Asset Recovery</span></h2>
             <p class="text-secondary lead mb-4">Specialized short-term contracts for physical asset localization and high-value retrieval. From luxury automotive systems to physical server drives.</p>
-            <div class="p-4 border-start border-accent border-4 bg-dark bg-opacity-50">
-               <h4 class="mb-0 accent-text">$5,000 Starting <span class="fs-6 text-white-50">+ Expenses</span></h4>
+            <div>
+               <h4 class="mb-0 accent-text"></span>$5,000 Starting</span> <span class="fs-6">+ Expenses</span></h4>
             </div>
          </div>
          <div class="col-lg-6 reveal animate-delay-2">

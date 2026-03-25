@@ -20,6 +20,157 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <style>
+    .about-engine-section {
+      background:
+        radial-gradient(circle at top right, rgba(201, 169, 110, 0.12), transparent 24%),
+        linear-gradient(180deg, #070a0e 0%, #101720 100%);
+    }
+    .about-engine-shell {
+      padding: 38px;
+      border-radius: 34px;
+      border: 1px solid rgba(201, 169, 110, 0.14);
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
+      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
+      overflow: hidden;
+    }
+    .about-engine-copy {
+      max-width: 470px;
+    }
+    .about-engine-copy .lead {
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.8;
+    }
+    .about-engine-notes {
+      display: grid;
+      gap: 14px;
+      margin-top: 26px;
+    }
+    .about-engine-note {
+      padding: 16px 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(201, 169, 110, 0.12);
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .about-engine-note strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .about-engine-note span {
+      color: rgba(255, 255, 255, 0.62);
+      font-size: 0.95rem;
+    }
+    .about-engine-visual {
+      position: relative;
+      min-height: 440px;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(201, 169, 110, 0.16);
+      box-shadow: 0 26px 65px rgba(0, 0, 0, 0.42);
+    }
+    .about-engine-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.03);
+      transition: transform 0.8s ease;
+    }
+    .about-engine-shell:hover .about-engine-visual img {
+      transform: scale(1.08);
+    }
+    .about-engine-ribbon {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 26px;
+    }
+    .about-engine-stat {
+      padding: 22px 16px;
+      border-radius: 22px;
+      text-align: center;
+      border: 1px solid rgba(201, 169, 110, 0.14);
+      background: rgba(8, 11, 15, 0.68);
+      backdrop-filter: blur(14px);
+      animation: engineStatRise 5.2s ease-in-out infinite;
+    }
+    .about-engine-stat:nth-child(2) {
+      animation-delay: 0.15s;
+    }
+    .about-engine-stat:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+    .about-engine-stat:nth-child(4) {
+      animation-delay: 0.45s;
+    }
+    .about-engine-stat strong {
+      display: block;
+      color: var(--accent-color);
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3vw, 2.7rem);
+      line-height: 1;
+      margin-bottom: 0.45rem;
+    }
+    .about-engine-stat span {
+      display: block;
+      color: rgba(255, 255, 255, 0.8);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.72rem;
+    }
+    @keyframes engineStatRise {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    [data-theme="light"] .about-engine-section {
+      background:
+        radial-gradient(circle at top right, rgba(155, 123, 75, 0.12), transparent 24%),
+        linear-gradient(180deg, #f6f8fb 0%, #eef2f7 100%);
+    }
+    [data-theme="light"] .about-engine-shell {
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(246, 248, 251, 0.98));
+      box-shadow: 0 24px 60px rgba(27, 40, 56, 0.12);
+    }
+    [data-theme="light"] .about-engine-copy .lead,
+    [data-theme="light"] .about-engine-note span {
+      color: var(--text-secondary);
+    }
+    [data-theme="light"] .about-engine-note {
+      background: rgba(155, 123, 75, 0.06);
+    }
+    [data-theme="light"] .about-engine-note strong {
+      color: var(--text-primary);
+    }
+    [data-theme="light"] .about-engine-stat {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 12px 30px rgba(27, 40, 56, 0.08);
+    }
+    [data-theme="light"] .about-engine-stat span {
+      color: var(--text-secondary);
+    }
+    @media (max-width: 991px) {
+      .about-engine-copy {
+        max-width: none;
+        text-align: center;
+      }
+      .about-engine-ribbon {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 767px) {
+      .about-engine-shell {
+        padding: 22px;
+      }
+      .about-engine-visual {
+        min-height: 300px;
+      }
+      .about-engine-ribbon {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -48,8 +199,8 @@
               <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
           <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -70,7 +221,7 @@
     <div class="hero-overlay"></div>
     <div class="container position-relative z-1 text-center">
       <h1 class="display-3 text-white">Our Legacy</h1>
-      <p class="lead text-white-50">Silent Vigilance. Unwavering Integrity. Global Intelligence.</p>
+      <p class="lead text-white">Silent Vigilance. Unwavering Integrity. Global Intelligence.</p>
     </div>
   </header>
 
@@ -112,8 +263,8 @@
     <div class="container py-5">
       <div class="row align-items-center g-5">
         <div class="col-lg-6 reveal">
-          <h5 class="accent-text text-uppercase mb-3 ls-2">The Timeline</h5>
-          <h2 class="display-4 mb-4">A Decade of <span class="accent-text">Shadows.</span></h2>
+          <h5 class="accent-text text-uppercase mb-3 ls-2 text-center text-lg-start">The Timeline</h5>
+          <h2 class="display-4 mb-4 text-center text-lg-start">A Decade of <span class="accent-text">Shadows.</span></h2>
           <p class="text-secondary lead mb-4">Founded in 2014 by veteran field agents, ShadowQuest evolved from a tactical recon unit into a global intelligence powerhouse.</p>
           
           <div class="ms-4 border-start border-accent ps-4">
@@ -138,32 +289,50 @@
     </div>
   </section>
 
-  <!-- Section 3: The Ecosystem (Stats Overlay) -->
-  <section class="py-5 position-relative overflow-hidden cinematic-section" style="min-height: 400px; background: #080b0f;">
-    <img src="assets/images/about_ecosystem.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-25" alt="Ecosystem">
-    <div class="hero-overlay" style="background: rgba(8, 11, 15, 0.4);"></div>
-    <div class="container py-5 position-relative z-1">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-8 reveal">
-          <h5 class="accent-text text-uppercase mb-3 ls-2">The Engine</h5>
-          <h2 class="display-4 mb-5 text-white">Our Intelligence Ecosystem</h2>
-          <div class="row g-4">
-            <div class="col-md-3">
-               <h2 class="accent-text mb-0">1.2M</h2>
-               <p class="small text-uppercase ls-2 text-white-50">Data Nodes</p>
+  <!-- Section 3: The Ecosystem -->
+  <section class="py-5 about-engine-section">
+    <div class="container py-5">
+      <div class="about-engine-shell">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 reveal reveal-left">
+            <div class="about-engine-copy">
+              <h5 class="accent-text text-uppercase mb-3 ls-2">The Engine</h5>
+              <h2 class="display-4 mb-4">Our Intelligence Ecosystem</h2>
+              <p class="lead mb-0">ShadowQuest runs on a synchronized intelligence architecture where field updates, forensic analysis, legal-safe evidence handling, and command routing move as one disciplined system across every live operation.</p>
+              <div class="about-engine-notes">
+                <div class="about-engine-note">
+                  <strong>Cross-Discipline Fusion</strong>
+                  <span>Human investigators, cyber analysts, and surveillance leads work from a single operational truth layer.</span>
+                </div>
+                <div class="about-engine-note">
+                  <strong>Evidence Without Drift</strong>
+                  <span>Every input is tagged, timed, and preserved so mission clarity holds from first signal to final report.</span>
+                </div>
+              </div>
             </div>
-            <div class="col-md-3">
-               <h2 class="accent-text mb-0">24/7</h2>
-               <p class="small text-uppercase ls-2 text-white-50">Active Monitoring</p>
+          </div>
+          <div class="col-lg-7 reveal reveal-right">
+            <div class="about-engine-visual">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80" alt="Intelligence analysts monitoring global systems">
             </div>
-            <div class="col-md-3">
-               <h2 class="accent-text mb-0">100%</h2>
-               <p class="small text-uppercase ls-2 text-white-50">Encryption</p>
-            </div>
-            <div class="col-md-3">
-               <h2 class="accent-text mb-0">45+</h2>
-               <p class="small text-uppercase ls-2 text-white-50">Global Hubs</p>
-            </div>
+          </div>
+        </div>
+        <div class="about-engine-ribbon reveal reveal-up">
+          <div class="about-engine-stat">
+            <strong>1.2M</strong>
+            <span>Data Nodes</span>
+          </div>
+          <div class="about-engine-stat">
+            <strong>24/7</strong>
+            <span>Active Monitoring</span>
+          </div>
+          <div class="about-engine-stat">
+            <strong>100%</strong>
+            <span>Encryption</span>
+          </div>
+          <div class="about-engine-stat">
+            <strong>45+</strong>
+            <span>Global Hubs</span>
           </div>
         </div>
       </div>
@@ -175,8 +344,8 @@
     <div class="container py-5">
       <div class="row g-5 align-items-center">
         <div class="col-lg-5 reveal">
-          <h5 class="accent-text text-uppercase mb-3 ls-2">The Handlers</h5>
-          <h2 class="display-5 mb-4">Elite Leadership</h2>
+          <h5 class="accent-text text-uppercase mb-3 ls-2 text-center text-lg-start">The Handlers</h5>
+          <h2 class="display-5 mb-4 text-center text-lg-start">Elite Leadership</h2>
           <p class="text-secondary mb-4">Our operations are directed by individuals who have spent decades in the most sensitive intelligence theaters across the globe.</p>
           <div class="p-4 bg-dark border-start border-accent border-4 rounded">
              <p class="mb-0 italic text-white-50" style="font-style: italic;">"Leadership in the shadows requires more than just authority; it requires absolute trust in the evidence."</p>
@@ -185,7 +354,7 @@
         <div class="col-lg-7 reveal animate-delay-2">
            <div class="row g-3">
               <div class="col-12">
-                 <img src="assets/images/about_operatives.png" class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover" style="height: 350px;" alt="Operatives">
+                 <img src="assets/images/about_operatives.png" class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover" style="height: 500px;" alt="Operatives">
               </div>
            </div>
         </div>

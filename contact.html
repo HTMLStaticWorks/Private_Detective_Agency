@@ -21,6 +21,26 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <style>
+    .secure-signal-form .form-control,
+    .secure-signal-form .form-select {
+      color: var(--text-primary);
+      -webkit-text-fill-color: var(--text-primary);
+    }
+    .secure-signal-form .form-control::placeholder {
+      color: rgba(255, 255, 255, 0.28);
+      opacity: 1;
+    }
+    [data-theme="light"] .secure-signal-form .form-control::placeholder {
+      color: rgba(11, 15, 20, 0.35);
+    }
+    .secure-signal-form .form-control:-webkit-autofill,
+    .secure-signal-form .form-control:-webkit-autofill:hover,
+    .secure-signal-form .form-control:-webkit-autofill:focus {
+      -webkit-text-fill-color: var(--text-primary);
+      transition: background-color 9999s ease-in-out 0s;
+    }
+  </style>
 </head>
 <body>
 
@@ -49,8 +69,8 @@
               <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
           <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
           <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
@@ -78,7 +98,7 @@
     <div class="container py-5">
       <div class="row g-5">
         <div class="col-lg-6 reveal">
-          <h2 class="display-5 mb-5">Global <span class="accent-text">Outposts</span></h2>
+          <h2 class="display-5 mb-5 text-center text-lg-start">Global <span class="accent-text">Outposts</span></h2>
 
           <div class="row g-4 mb-5">
             <div class="col-sm-6">
@@ -124,7 +144,7 @@
         <div class="col-lg-6">
           <div class="feature-card">
             <h3 class="mb-4">Send Secure Signal</h3>
-            <form>
+            <form class="secure-signal-form">
               <div class="row g-3">
                 <div class="col-md-6 mb-3"><input type="text" class="form-control" placeholder="Your Name"></div>
                 <div class="col-md-6 mb-3"><input type="email" class="form-control" placeholder="Secure Email"></div>
@@ -206,7 +226,7 @@
       <hr class="mt-5 border-secondary opacity-25">
       <div class="row mt-4 pb-3">
         <div class="col-md-6 text-center text-md-start">
-          <p class="text-secondary small">&copy; 2024 ShadowQuest Agency. All Rights Reserved.</p>
+          <p class="text-secondary small">&copy; 2026 ShadowQuest Agency. All Rights Reserved.</p>
         </div>
         <div class="col-md-6 text-center text-md-end">
 

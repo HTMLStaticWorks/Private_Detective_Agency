@@ -20,6 +20,188 @@
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <style>
+    .global-reach-section {
+      padding: 110px 0;
+      background:
+        radial-gradient(circle at top left, rgba(201, 169, 110, 0.12), transparent 28%),
+        linear-gradient(180deg, #06090d 0%, #0b0f14 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .global-reach-shell {
+      position: relative;
+      z-index: 1;
+      padding: 38px;
+      border-radius: 34px;
+      border: 1px solid rgba(201, 169, 110, 0.12);
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+    }
+    .global-reach-copy {
+      max-width: 460px;
+    }
+    .global-reach-copy .lead {
+      color: rgba(255, 255, 255, 0.72) !important;
+      line-height: 1.75;
+    }
+    .global-reach-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 28px;
+    }
+    .global-reach-item {
+      padding: 16px 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(201, 169, 110, 0.12);
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .global-reach-item strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .global-reach-item span {
+      color: rgba(255, 255, 255, 0.62);
+      font-size: 0.95rem;
+    }
+    .global-reach-stage {
+      position: relative;
+      min-height: 540px;
+      border-radius: 30px;
+      overflow: hidden;
+      border: 1px solid rgba(201, 169, 110, 0.16);
+      background: #080b0f;
+      box-shadow: 0 28px 65px rgba(0, 0, 0, 0.45);
+    }
+    .global-reach-stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.55;
+      transform: scale(1.03);
+    }
+    .global-reach-stage::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(8, 11, 15, 0.1), rgba(8, 11, 15, 0.8)),
+        radial-gradient(circle at center, rgba(201, 169, 110, 0.08), transparent 55%);
+    }
+    .global-reach-band {
+      position: absolute;
+      left: 26px;
+      right: 26px;
+      bottom: 26px;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .global-reach-stat {
+      padding: 18px 16px;
+      border-radius: 22px;
+      background: rgba(8, 11, 15, 0.76);
+      border: 1px solid rgba(201, 169, 110, 0.16);
+      backdrop-filter: blur(14px);
+      text-align: center;
+    }
+    .global-reach-stat strong {
+      display: block;
+      color: var(--accent-color);
+      font-family: var(--font-serif);
+      font-size: clamp(1.9rem, 3vw, 2.6rem);
+      line-height: 1;
+      margin-bottom: 0.45rem;
+    }
+    .global-reach-stat span {
+      display: block;
+      color: rgba(255, 255, 255, 0.8);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.72rem;
+    }
+    .global-reach-signal {
+      position: absolute;
+      top: 28px;
+      left: 28px;
+      z-index: 2;
+      padding: 14px 18px;
+      border-radius: 18px;
+      background: rgba(8, 11, 15, 0.74);
+      border: 1px solid rgba(201, 169, 110, 0.16);
+      backdrop-filter: blur(12px);
+    }
+    .global-reach-signal span {
+      display: block;
+      color: var(--accent-color);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.68rem;
+      font-weight: 700;
+    }
+    .global-reach-signal strong {
+      display: block;
+      margin-top: 0.35rem;
+      color: #fff;
+      font-size: 1rem;
+    }
+    @media (max-width: 991px) {
+      .global-reach-section {
+        padding: 90px 0;
+      }
+      .global-reach-copy {
+        max-width: none;
+        text-align: center;
+      }
+    }
+    @media (max-width: 767px) {
+      .global-reach-shell {
+        padding: 22px;
+      }
+      .global-reach-stage {
+        min-height: 470px;
+      }
+      .global-reach-stage img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .global-reach-signal {
+        top: 18px;
+        left: 18px;
+        right: auto;
+        max-width: 220px;
+      }
+      .global-reach-band {
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+      .global-reach-stat {
+        padding: 14px 10px;
+        border-radius: 18px;
+      }
+      .global-reach-stat strong {
+        font-size: 1.65rem;
+      }
+      .global-reach-stat span {
+        font-size: 0.58rem;
+        letter-spacing: 0.12em;
+      }
+    }
+    @media (max-width: 991px) {
+      .secure-vow-copy h5,
+      .secure-vow-copy h2 {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -51,8 +233,8 @@
               <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
           <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -168,15 +350,13 @@
 
 
   <!-- Section 1: Tactical Excellence (Template: Image L, Text R) -->
-  <section class="py-5 overflow-hidden">
+  <section class="py-5 overflow-hidden tactical-excellence-section">
     <div class="container py-5">
       <div class="row align-items-center g-5">
         <div class="col-lg-6 reveal animate-delay-1">
           <div class="position-relative">
             <img src="assets/images/tactical.png" class="img-fluid rounded-4 shadow-lg border border-secondary border-opacity-10" alt="Tactical Unit">
-            <div class="position-absolute bottom-0 start-0 p-4 bg-accent text-dark-custom rounded-end-4 fw-bold stat-overlay">
-               <i class="bi bi-geo-alt-fill me-2"></i>Active Operatives: 250+
-            </div>
+            
           </div>
         </div>
         <div class="col-lg-6 reveal animate-delay-2">
@@ -195,7 +375,7 @@
   </section>
 
   <!-- Section 2: Intel Lifecycle (Template: Text L, Image R) -->
-  <section class="py-5 bg-secondary bg-opacity-10 overflow-hidden">
+  <section class="py-5 bg-secondary bg-opacity-10 overflow-hidden intelligence-lifecycle-section">
     <div class="container py-5">
       <div class="row align-items-center flex-lg-row-reverse g-5">
         <div class="col-lg-6 reveal animate-delay-1">
@@ -238,26 +418,45 @@
   </section>
 
   <!-- Section 3: Global Reach (Template: Full-Width Map Background) -->
-  <section class="py-5 position-relative overflow-hidden cinematic-section" style="min-height: 500px; background: #080b0f;">
-    <img src="assets/images/global_map.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-25" alt="Map">
-    <div class="hero-overlay" style="background: rgba(8, 11, 15, 0.4);"></div>
-    <div class="container py-5 position-relative z-1 text-center">
-      <div class="row justify-content-center py-5">
-        <div class="col-lg-8 reveal">
-          <h2 class="display-4 text-white mb-4">Unlimited Global Reach</h2>
-          <p class="lead text-white-50 mb-5">With active field agents in over 45 countries, ShadowQuest is the only firm providing true borderless investigation services.</p>
-          <div class="row g-4 text-center">
-            <div class="col-4">
-               <h3 class="accent-text mb-0">45+</h3>
-               <p class="small text-uppercase ls-2 text-white-50">Countries</p>
+  <section class="global-reach-section cinematic-section">
+    <div class="container">
+      <div class="global-reach-shell">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 reveal reveal-left">
+            <div class="global-reach-copy">
+              <h5 class="accent-text text-uppercase mb-3">Borderless Intelligence</h5>
+              <h2 class="display-4 mb-4">Unlimited Global Reach</h2>
+              <p class="lead mb-0">With active field agents in over 45 countries, ShadowQuest coordinates true cross-border investigations through a single intelligence command layer built for speed, discretion, and verified delivery.</p>
+              <div class="global-reach-list">
+                <div class="global-reach-item">
+                  <strong>Embedded Regional Operators</strong>
+                  <span>Local field access paired with central evidence control and unified mission reporting.</span>
+                </div>
+                <div class="global-reach-item">
+                  <strong>Live Data Corridors</strong>
+                  <span>Fast escalation through synchronized databases, partners, and on-ground surveillance channels.</span>
+                </div>
+              </div>
             </div>
-            <div class="col-4 border-start border-end border-secondary border-opacity-25">
-               <h3 class="accent-text mb-0">12k</h3>
-               <p class="small text-uppercase ls-2 text-white-50">Databases</p>
-            </div>
-            <div class="col-4">
-               <h3 class="accent-text mb-0">2.5s</h3>
-               <p class="small text-uppercase ls-2 text-white-50">Response</p>
+          </div>
+          <div class="col-lg-7 reveal reveal-right">
+            <div class="global-reach-stage">
+              <img src="assets/images/global_map.png" alt="Global Intelligence Map">
+              
+              <div class="global-reach-band">
+                <div class="global-reach-stat">
+                  <strong>45+</strong>
+                  <span>Countries</span>
+                </div>
+                <div class="global-reach-stat">
+                  <strong>12k</strong>
+                  <span>Databases</span>
+                </div>
+                <div class="global-reach-stat">
+                  <strong>2.5s</strong>
+                  <span>Response</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -269,7 +468,7 @@
   <section class="py-5">
     <div class="container py-5">
       <div class="row g-5 align-items-center">
-        <div class="col-lg-5 reveal">
+        <div class="col-lg-5 reveal secure-vow-copy">
           <h5 class="accent-text text-uppercase mb-3">The Vow</h5>
           <h2 class="display-5 mb-4">Ironclad Confidentiality</h2>
           <p class="text-secondary mb-4">Your secrets are the absolute foundation of our agency. We employ post-quantum encryption for all client communications.</p>
