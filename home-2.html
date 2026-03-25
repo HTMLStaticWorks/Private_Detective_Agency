@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShadowQuest | Premium Intelligence Variant</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="Logo" class="brand-logo">
+        SHADOW<span class="brand-text">QUEST</span>
+      </a>
+      
+      <div class="d-flex align-items-center d-lg-none gap-2">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <i class="bi bi-list text-white fs-2"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <button type="button" class="btn d-lg-none p-2 border-0" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Close" style="position: absolute; top: 20px; right: 20px; z-index: 1080; color: var(--accent-color);">
+           <i class="bi bi-x-lg fs-2"></i>
+        </button>
+        <ul class="navbar-nav mx-auto-custom mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+              Home <i class="bi bi-chevron-down ms-1" style="font-size: 0.7rem;"></i>
+            </a>
+            <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="homeDropdown">
+              <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+              <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0 theme-controls">
+          <button id="themeToggle" class="theme-toggle"><i class="bi bi-sun-fill"></i></button>
+          <a href="dashboard.html" class="btn btn-accent px-2 py-2" title="Client Dashboard"><i class="bi bi-grid-fill fs-5"></i></a>
+          <button id="rtlToggle" class="rtl-toggle btn-sm"><i class="bi bi-translate"></i></button>
+          <a href="login.html" class="btn btn-accent">Agent Portal</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Split Design Hero -->
+  <header class="vh-100 d-flex align-items-center justify-content-center text-center position-relative overflow-hidden hero-intelligence">
+    <!-- Advanced Intelligence Tracking System -->
+    <canvas id="hero-tracking-canvas" class="tracking-canvas"></canvas>
+    <div class="container">
+      <h5 class="accent-text text-uppercase mb-4">Precision Intelligence</h5>
+      <h1 class="display-1 mb-5">SILENT <span class="bg-accent text-dark px-3">VIGILANCE</span></h1>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <p class="text-white-50 fs-4 mb-5">The premier agency for complex jurisdictional challenges and high-net-worth protection since 2008.</p>
+          <div class="d-flex justify-content-center gap-4">
+             <a href="contact.html" class="btn btn-accent btn-lg px-5 p-3">Request Mission</a>
+             <a href="services.html" class="btn btn-outline-accent btn-lg px-5 p-3">Capabilities</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. Nexus Control Hub -->
+  <section class="h2-nexus-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal reveal-left">
+          <img src="assets/images/home2_nexus.png" alt="Surveillance Hub" class="h2-nexus-img">
+        </div>
+        <div class="col-lg-6 reveal reveal-right">
+          <h5 class="accent-text text-uppercase mb-3">Operational Command</h5>
+          <h2 class="display-4 mb-4">Nexus Control <span class="accent-text">Hub</span></h2>
+          <p class="text-secondary fs-5 mb-4">Our centralized command center integrates real-time global sensor data into a singular, actionable intelligence stream, providing unparalleled situational awareness for high-stakes missions.</p>
+          <a href="services.html" class="btn btn-outline-accent">Explore Network</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Forensic Data Integrity -->
+  <section class="h2-forensic-section">
+    <img src="assets/images/home2_forensic.png" alt="Forensic Lab" class="h2-forensic-bg">
+    <div class="h2-forensic-overlay"></div>
+    <div class="container">
+      <div class="h2-forensic-content text-center reveal reveal-zoom">
+        <h5 class="accent-text text-uppercase mb-3">Evidentiary Precision</h5>
+        <h2 class="display-4 text-white mb-4">Forensic Data <span class="accent-text">Integrity</span></h2>
+        <p class="text-secondary fs-5 mb-0">From biometric analysis to deep-level digital forensics, our state-of-the-art laboratory ensures that every piece of evidence is verified with undeniable scientific clarity and legal admissibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Field Operations Protocol -->
+  <section class="h2-field-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal reveal-left">
+          <h5 class="accent-text text-uppercase mb-3">Tactical Stealth</h5>
+          <h2 class="display-4 mb-4">Field Operations <span class="accent-text">Protocol</span></h2>
+          <p class="text-secondary fs-5 mb-4">Our elite operatives utilize advanced stealth techniques and low-profile gear to execute complex jurisdictional challenges in high-risk metropolitan environments without detection.</p>
+          <ul class="list-unstyled text-secondary mb-5">
+            <li class="mb-2"><i class="bi bi-check2 accent-text me-2"></i> Urban Stealth Infiltration</li>
+            <li class="mb-2"><i class="bi bi-check2 accent-text me-2"></i> Rapid Extraction Systems</li>
+            <li class="mb-2"><i class="bi bi-check2 accent-text me-2"></i> Covert Asset Protection</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 reveal reveal-right">
+          <div class="h2-field-img-wrapper">
+             <img src="assets/images/home2_field.png" alt="Field Operative" class="w-100 h-100 object-fit-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Global Signal Intelligence -->
+  <section class="h2-signal-section">
+    <div class="container">
+      <div class="h2-signal-container reveal reveal-zoom">
+        <img src="assets/images/home2_signal.png" alt="Global Signals" class="h2-signal-bg">
+        <div class="h2-signal-card">
+           <h5 class="accent-text mb-3">Signal Intelligence</h5>
+           <h3 class="mb-3">Global SIGINT <span class="accent-text">Network</span></h3>
+           <p class="text-secondary mb-0">Harnessing orbital satellite trajectories and multi-spectral frequency analysis to monitor encrypted communications across six continents in real-time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. The Secure Crypt -->
+  <section class="h2-vault-section">
+    <div class="container">
+      <div class="h2-vault-grid">
+        <div class="reveal reveal-left">
+          <img src="assets/images/home2_vault.png" alt="Security Vault" class="h2-vault-img">
+        </div>
+        <div class="reveal reveal-right">
+          <h5 class="accent-text text-uppercase mb-3">Terminal Security</h5>
+          <h2 class="display-4 mb-4">The Secure <span class="accent-text">Crypt</span></h2>
+          <p class="text-secondary fs-5 mb-4">Zero-compromise physical and digital archiving for sensitive intelligence assets. Our deep-storage vault utilizes quantum-resistant encryption and biometric isolation protocols.</p>
+          <a href="contact.html" class="btn btn-accent px-4 py-3">Access Protocol</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Cyber Response Protocol -->
+  <section class="h2-cyber-section">
+    <img src="assets/images/home2_cyber.png" alt="Cyber Ops" class="h2-cyber-bg">
+    <div class="container position-relative z-3">
+      <div class="h2-cyber-content reveal reveal-zoom">
+        <h5 class="text-info text-uppercase mb-3" style="letter-spacing: 3px;">Digital Counter-Measures</h5>
+        <h2 class="display-3 text-white mb-4">Cyber Response <span class="text-info">Protocol</span></h2>
+        <p class="text-secondary fs-5 mb-5">Deploying advanced holographic countermeasures and quantum-encrypted firewalls to neutralize polymorphic digital threats before they breach your perimeter.</p>
+        <div class="d-flex justify-content-center gap-3">
+           <div class="px-4 py-2 border border-info rounded-pill text-info small">Active Scanning</div>
+           <div class="px-4 py-2 border border-info rounded-pill text-info small">Threat Neutralized</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="navbar-brand mb-4 d-flex" href="#">
+            <img src="assets/images/logo.svg" alt="Logo" class="brand-logo me-2">
+            SHADOW<span class="brand-text">QUEST</span>
+          </a>
+          <p class="text-secondary">Leading the industry in private intelligence and surveillance. Our mission is to provide clarity where there is doubt and security where there is risk.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#" class="accent-text fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="accent-text fs-4"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="accent-text fs-4"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="accent-text fs-4"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-1">
+          <h5 class="mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-secondary">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="text-secondary">About Us</a></li>
+            <li class="mb-2"><a href="services.html" class="text-secondary">Services</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h5 class="mb-4">Support</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="contact.html" class="text-secondary">Contact</a></li>
+            <li class="mb-2"><a href="pricing.html" class="text-secondary">Pricing</a></li>
+            <li class="mb-2"><a href="dashboard.html" class="text-secondary">Dashboard</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="mb-4">Newsletter</h5>
+          <p class="text-secondary small">Subscribe for security alerts and insights.</p>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Email Address">
+            <button class="btn btn-accent"><i class="bi bi-send"></i></button>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-5 border-secondary opacity-25">
+      <div class="row mt-4 pb-3">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="text-secondary small mb-md-0">&copy; 2026 ShadowQuest Agency. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="back-to-top-btn" title="Back to Top"><i class="bi bi-arrow-up"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

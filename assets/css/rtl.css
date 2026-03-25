@@ -1,0 +1,54 @@
+/* RTL Specific Styles for ShadowQuest */
+[dir="rtl"] {
+  --dir-multiplier: -1;
+  --font-main: 'Noto Sans Arabic', sans-serif;
+  --text-align: right;
+}
+
+[dir="rtl"] body {
+  text-align: right;
+}
+
+[dir="rtl"] .sidebar {
+  inset-inline-start: auto;
+  inset-inline-end: 0;
+}
+
+[dir="rtl"] .main-content {
+  margin-inline-start: 0;
+  margin-inline-end: 280px;
+}
+
+@media (max-width: 991px) {
+  [dir="rtl"] .sidebar {
+    transform: translateX(100%);
+  }
+  [dir="rtl"] .sidebar.show {
+    transform: translateX(0);
+  }
+}
+
+/* RTL Arrow Flipping */
+[dir="rtl"] .bi-arrow-right::before { content: "\f12f"; } /* bi-arrow-left */
+[dir="rtl"] .bi-chevron-right::before { content: "\f282"; } /* bi-chevron-left */
+[dir="rtl"] .bi-box-arrow-left::before { content: "\f1be"; } /* bi-box-arrow-right */
+
+/* Navbar Adjustments */
+[dir="rtl"] .navbar-toggler {
+  order: 1; /* Moves hamburger in RTL usually */
+}
+
+/* Chat RTL logic */
+[dir="rtl"] .message-user {
+  margin-inline-start: auto;
+  margin-inline-end: 0;
+  border-end-start-radius: 0;
+  border-end-end-radius: var(--border-radius) !important;
+}
+
+[dir="rtl"] .message-agent {
+  margin-inline-end: auto;
+  margin-inline-start: 0;
+  border-end-end-radius: 0;
+  border-end-start-radius: var(--border-radius) !important;
+}

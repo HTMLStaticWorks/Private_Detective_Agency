@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Access Request | ShadowQuest</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <style>
+    body { background: #050709; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; position: relative; }
+    .auth-card { background: var(--secondary-color); padding: 40px; border-radius: 20px; width: 95%; max-width: 600px; border: 1px solid rgba(201, 169, 110, 0.1); }
+    .divider { display: flex; align-items: center; text-align: center; margin: 20px 0; }
+    .divider::before, .divider::after { content: ''; flex: 1; border-bottom: 1px solid rgba(201, 169, 110, 0.2); }
+    .divider:not(:empty)::before { margin-right: .5em; }
+    .divider:not(:empty)::after { margin-left: .5em; }
+    /* Mobile: Card Look */
+    @media (max-width: 767px) {
+      body { align-items: center; padding: 20px !important; }
+      .auth-card { 
+        width: 100%; 
+        max-width: 100%; 
+        min-height: auto; 
+        border-radius: 20px; 
+        border: 1px solid rgba(201, 169, 110, 0.2); 
+        padding: 30px 20px; 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      }
+      .position-absolute.top-0.end-0 { z-index: 1000; }
+    }
+    
+    /* Tablet & Web: Portrait Card */
+    @media (min-width: 768px) {
+      .auth-card { width: 95%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="position-absolute top-0 end-0 p-4">
+    <button id="themeToggle" class="theme-toggle"><i class="bi bi-sun-fill"></i></button>
+  </div>
+
+  <div class="auth-card reveal">
+    <div class="text-center mb-5">
+      <a class="navbar-brand fs-2 mb-4 d-flex justify-content-center" href="index.html">
+        <img src="assets/images/logo.svg" alt="Logo" class="brand-logo me-2" style="height: 50px;">
+        SHADOW<span class="brand-text">QUEST</span>
+      </a>
+      <h3 class="accent-text mt-3">Request Secure Portal Access</h3>
+    </div>
+    <form action="login.html">
+      <div class="row g-3">
+        <div class="col-md-6 mb-3">
+          <label class="form-label text-secondary small">Identity Name</label>
+          <input type="text" class="form-control" placeholder="Agent or Organization">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label text-secondary small">Vetted Email</label>
+          <input type="email" class="form-control" placeholder="secure.signal@alias.com">
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label text-secondary small">Service Level Requirement</label>
+          <select class="form-select">
+            <option>Corporate Silver</option>
+            <option>Elite Gold (VIP)</option>
+            <option>Custom Enterprise</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label text-secondary small">Assign Master PassKey</label>
+          <input type="password" class="form-control" placeholder="••••••••">
+        </div>
+        <div class="col-md-6 mb-4">
+          <label class="form-label text-secondary small">Confirm Master PassKey</label>
+          <input type="password" class="form-control" placeholder="••••••••">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-accent w-100 p-3">Submit Access Request</button>
+        </div>
+      </div>
+
+      <div class="divider text-secondary small uppercase">OR REGISTER WITH</div>
+
+      <div class="row g-2 mb-4">
+        <div class="col-6">
+          <button type="button" class="btn btn-outline-accent w-100 btn-sm py-2"><i class="bi bi-google me-2"></i> Google</button>
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn btn-outline-accent w-100 btn-sm py-2"><i class="bi bi-twitter-x me-2"></i> Twitter</button>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="login.html" class="text-secondary small">Already have access? Signal Login.</a>
+      </div>
+    </form>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

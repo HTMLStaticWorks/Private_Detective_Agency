@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Coming Soon | ShadowQuest</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <style>
+    body { background: var(--primary-color); display: flex; align-items: center; justify-content: center; min-height: 100vh; overflow: hidden; }
+    .scanline { position: fixed; top: 0; left: 0; width: 100%; height: 2px; background: var(--accent-color); opacity: 0.1; animation: scan 3s linear infinite; }
+    @keyframes scan { from { top: 0; } to { top: 100%; } }
+  </style>
+</head>
+<body>
+  <div class="scanline"></div>
+  <div class="container text-center">
+    <h5 class="accent-text text-uppercase mb-3">Under Surveillance</h5>
+    <h1 class="display-3 mb-4">STATION COMING ONLINE</h1>
+    <p class="text-secondary mb-5">Our digital intelligence division is currently deploying new tools. Stay alert.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Secure email for notification">
+          <button class="btn btn-accent">Wait For Signal</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

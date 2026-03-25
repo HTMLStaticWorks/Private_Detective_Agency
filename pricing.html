@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans | ShadowQuest</title>
+  <meta name="description" content="Scalable intelligence solutions tailored to your security footprint.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="Logo" class="brand-logo">
+        SHADOW<span class="brand-text">QUEST</span>
+      </a>
+      
+      <div class="d-flex align-items-center d-lg-none gap-2">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <i class="bi bi-list text-white fs-2"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="mainNav"><button type="button" class="btn d-lg-none p-2 border-0" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Close" style="position: absolute; top: 20px; right: 20px; z-index: 1080; color: var(--accent-color);"><i class="bi bi-x-lg fs-2"></i></button>
+        <ul class="navbar-nav mx-auto-custom mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+              Home <i class="bi bi-chevron-down ms-1" style="font-size: 0.7rem;"></i>
+            </a>
+            <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="homeDropdown">
+              <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+              <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0 theme-controls">
+          <button id="themeToggle" class="theme-toggle"><i class="bi bi-sun-fill"></i></button>
+          <a href="dashboard.html" class="btn btn-accent px-2 py-2" title="Client Dashboard"><i class="bi bi-grid-fill fs-5"></i></a>
+          <button id="rtlToggle" class="rtl-toggle btn-sm"><i class="bi bi-translate"></i></button>
+          <a href="login.html" class="btn btn-accent">Agent Portal</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <img src="assets/images/vault.png" alt="Pricing Hero" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative z-1 text-center">
+      <h5 class="accent-text text-uppercase mb-3 ls-2">Security Tiers</h5>
+      <h1 class="display-3 text-white">Investment in Truth</h1>
+      <p class="lead text-white-50">Scalable intelligence solutions tailored to your security footprint.</p>
+    </div>
+  </header>
+
+  <!-- Section 1: Standard Tactical Grid (3 Cards) -->
+  <section class="py-5">
+    <div class="container py-5">
+      <div class="text-center mb-5 reveal">
+         <h5 class="accent-text text-uppercase mb-3 ls-2">Mission Tiers</h5>
+         <h2 class="display-4">Strategic <span class="accent-text">Investment</span></h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <!-- Tier 1 -->
+        <div class="col-lg-3 col-md-6 reveal">
+          <div class="feature-card h-100 text-center border-accent border-opacity-10">
+            <div class="feature-icon mb-4"><i class="bi bi-shield-lock"></i></div>
+            <h5 class="text-secondary small text-uppercase ls-2">Standard Trace</h5>
+            <h2 class="display-5 mb-4">$499<span class="fs-5 text-secondary">/deposit</span></h2>
+            <ul class="list-unstyled text-secondary mb-5 small">
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> Individual Surveillance</li>
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> 24h Digital Footprint Audit</li>
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> PDF Evidence Report</li>
+              <li class="opacity-25"><i class="bi bi-x-lg text-danger me-2"></i> Priority Field Team</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-accent w-100 py-3">Select Entry</a>
+          </div>
+        </div>
+        <!-- Tier 2 -->
+        <div class="col-lg-3 col-md-6 reveal animate-delay-1">
+          <div class="feature-card h-100 text-center border-accent border-opacity-10">
+            <div class="feature-icon mb-4"><i class="bi bi-person-check"></i></div>
+            <h5 class="text-secondary small text-uppercase ls-2">Retainer Protocol</h5>
+            <h2 class="display-5 mb-4">$1,200<span class="fs-5 text-secondary">/mo</span></h2>
+            <ul class="list-unstyled text-secondary mb-5 small">
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> Monthly Security Audit</li>
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> Remote Node Access</li>
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> Priority Response Team</li>
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> Discounted Field Ops</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-accent w-100 py-3">Reserve Slot</a>
+          </div>
+        </div>
+        <!-- Tier 3 (Most Requested) -->
+        <div class="col-lg-3 col-md-6 reveal animate-delay-2">
+          <div class="feature-card h-100 text-center border-accent border-2 shadow-lg" style="transform: scale(1.05); z-index: 5;">
+            <div class="badge bg-accent text-dark position-absolute top-0 start-50 translate-middle px-4 py-2 rounded-pill mt-2">ACTIVE OP</div>
+            <div class="feature-icon mb-4 mt-3"><i class="bi bi-person-bounding-box"></i></div>
+            <h5 class="text-secondary small text-uppercase ls-2">Corporate Elite</h5>
+            <h2 class="display-5 mb-4">$2,400<span class="fs-5 text-secondary">/fixed</span></h2>
+            <ul class="list-unstyled text-secondary mb-5 small">
+              <li class="mb-3 text-white"><i class="bi bi-check2 accent-text me-2"></i> Multi-Unit Field Monitoring</li>
+              <li class="mb-3 text-white"><i class="bi bi-check2 accent-text me-2"></i> Advanced OSINT & DEEPWEB</li>
+              <li class="mb-3 text-white"><i class="bi bi-check2 accent-text me-2"></i> Dedicated Lead Agent</li>
+              <li class="mb-3 text-white"><i class="bi bi-check2 accent-text me-2"></i> Encrypted Video Vault Access</li>
+            </ul>
+            <a href="contact.html" class="btn btn-accent w-100 py-3">Engual Force</a>
+          </div>
+        </div>
+        <!-- Tier 4 -->
+        <div class="col-lg-3 col-md-6 reveal animate-delay-3">
+          <div class="feature-card h-100 text-center border-accent border-opacity-10">
+            <div class="feature-icon mb-4"><i class="bi bi-globe-americas"></i></div>
+            <h5 class="text-secondary small text-uppercase ls-2">Inter-Agency</h5>
+            <h2 class="display-5 mb-4">Custom<span class="fs-5 text-secondary">/quote</span></h2>
+            <ul class="list-unstyled text-secondary mb-5 small">
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> Global Asset Protection</li>
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> Post-Quantum Tech Forensics</li>
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> 24/7 Rapid Incident Unit</li>
+              <li class="mb-3"><i class="bi bi-check2 accent-text me-2"></i> Hostile Extraction Support</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-accent w-100 py-3">Consult HQ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Special Asset recovery (Template: Detailed Profile Image Left) -->
+  <section class="py-5 bg-secondary bg-opacity-10">
+    <div class="container py-5">
+      <div class="row align-items-center g-5 flex-md-row-reverse">
+         <div class="col-lg-6 reveal">
+            <h5 class="accent-text text-uppercase mb-3 ls-2">One-Time Missions</h5>
+            <h2 class="display-5 mb-4">Tactical <span class="accent-text">Asset Recovery</span></h2>
+            <p class="text-secondary lead mb-4">Specialized short-term contracts for physical asset localization and high-value retrieval. From luxury automotive systems to physical server drives.</p>
+            <div class="p-4 border-start border-accent border-4 bg-dark bg-opacity-50">
+               <h4 class="mb-0 accent-text">$5,000 Starting <span class="fs-6 text-white-50">+ Expenses</span></h4>
+            </div>
+         </div>
+         <div class="col-lg-6 reveal animate-delay-2">
+            <img src="assets/images/serv_tracing.png" class="img-fluid rounded-4 shadow-lg tilt-effect border border-secondary border-opacity-10" alt="Asset Tracing Portfolio">
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: The Ghost Protocol (Unique Feature Section) -->
+  <section class="py-5 position-relative overflow-hidden cinematic-section" style="min-height: 500px; background: #080b0f;">
+    <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10" style="background-image: radial-gradient(var(--accent-color) 1px, transparent 1px); background-size: 30px 30px;"></div>
+    <div class="container py-5 position-relative z-1 text-center">
+      <div class="row justify-content-center mb-5 reveal">
+        <div class="col-lg-8">
+          <h5 class="accent-text text-uppercase mb-3 ls-4">Elite Exclusives</h5>
+          <h2 class="display-3 mb-4">The Ghost Protocol</h2>
+          <p class="text-white-50 lead">Advanced operational invisibility included in our Platinum and Retainer tiers. Standard in every high-stakes deployment.</p>
+        </div>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-4 reveal animate-delay-1">
+          <div class="p-5 border border-secondary border-opacity-25 rounded-4 h-100 bg-dark bg-opacity-20 backdrop-blur">
+            <i class="bi bi-broadcast-pin fs-1 accent-text mb-4 d-block"></i>
+            <h4 class="mb-3">Signal Vanishing</h4>
+            <p class="small text-white-50 mb-0">Total neutralization of electronic signatures during field ops. No GPS, no cell-trace, no digital shadow exists.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal animate-delay-2">
+          <div class="p-5 border border-accent border-opacity-50 rounded-4 h-100 bg-dark bg-opacity-40 backdrop-blur shadow-lg">
+            <i class="bi bi-fingerprint fs-1 accent-text mb-4 d-block"></i>
+            <h4 class="mb-3">Identity Scrambling</h4>
+            <p class="small text-white-50 mb-0">Sub-surface biometric and gait-analysis masking. We are invisible to even the most advanced facial recognition grids.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal animate-delay-3">
+          <div class="p-5 border border-secondary border-opacity-25 rounded-4 h-100 bg-dark bg-opacity-20 backdrop-blur">
+            <i class="bi bi-boxes fs-1 accent-text mb-4 d-block"></i>
+            <h4 class="mb-3">Blockchain Erasure</h4>
+            <p class="small text-white-50 mb-0">Triple-layered transaction cleaning for zero-trace financial movements across decentralized networks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Secure Consultation (Minimalist CTA) -->
+  <section class="py-5">
+     <div class="container py-5 text-center">
+        <div class="reveal">
+           <h5 class="accent-text text-uppercase mb-3 ls-2">Identity Shield</h5>
+           <h2 class="display-3 mb-5">Start Your <span class="accent-text">Inquiry</span></h2>
+           <div class="row justify-content-center">
+              <div class="col-lg-6">
+                 <p class="text-secondary mb-5">Open an encrypted channel for a 1-on-1 consultation with a lead controller. No logs. No history. Total privacy.</p>
+                 <a href="contact.html" class="btn btn-accent btn-lg px-5 py-3 shadow-lg">Open SECURE Channel</a>
+              </div>
+           </div>
+        </div>
+     </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="navbar-brand mb-4 d-flex" href="#">
+            <img src="assets/images/logo.svg" alt="Logo" class="brand-logo me-2">
+            SHADOW<span class="brand-text">QUEST</span>
+          </a>
+          <p class="text-secondary">Leading the industry in private intelligence and surveillance. Our mission is to provide clarity where there is doubt and security where there is risk.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#" class="accent-text fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="accent-text fs-4"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="accent-text fs-4"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="accent-text fs-4"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-1">
+          <h5 class="mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-secondary">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="text-secondary">About Us</a></li>
+            <li class="mb-2"><a href="services.html" class="text-secondary">Services</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h5 class="mb-4">Support</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="contact.html" class="text-secondary">Contact</a></li>
+            <li class="mb-2"><a href="pricing.html" class="text-secondary">Pricing</a></li>
+            <li class="mb-2"><a href="dashboard.html" class="text-secondary">Dashboard</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="mb-4">Newsletter</h5>
+          <p class="text-secondary small">Subscribe for security alerts and insights.</p>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Email Address">
+            <button class="btn btn-accent"><i class="bi bi-send"></i></button>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-5 border-secondary opacity-25">
+      <div class="row mt-4 pb-3">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="text-secondary small mb-md-0">&copy; 2026 ShadowQuest Agency. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="back-to-top-btn" title="Back to Top"><i class="bi bi-arrow-up"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
