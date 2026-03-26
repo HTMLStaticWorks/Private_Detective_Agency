@@ -71,6 +71,33 @@
       background: #e7edf4;
       color: var(--text-primary);
     }
+    html:not([data-theme="light"]) .agent-outreach-card .form-control::placeholder {
+      color: rgba(255, 255, 255, 0.65);
+      opacity: 1;
+    }
+    .active-investigations-card .dashboard-cases-table th:last-child,
+    .active-investigations-card .dashboard-cases-table td:last-child {
+      width: 170px;
+      text-align: center;
+    }
+    .active-investigations-card .dashboard-case-action-btn {
+      width: 100%;
+    }
+    [data-theme="light"] .active-investigations-card .dashboard-cases-table.table-dark {
+      background-color: var(--card-bg) !important;
+      color: var(--text-primary) !important;
+      border-color: var(--border-color) !important;
+      --bs-table-bg: var(--card-bg);
+      --bs-table-striped-bg: var(--card-bg);
+      --bs-table-hover-bg: rgba(0, 0, 0, 0.03);
+      --bs-table-color: var(--text-primary);
+      --bs-table-striped-color: var(--text-primary);
+      --bs-table-hover-color: var(--text-primary);
+      --bs-table-border-color: var(--border-color);
+    }
+    [data-theme="light"] .active-investigations-card .progress.bg-dark {
+      background-color: rgba(0, 0, 0, 0.08) !important;
+    }
     @media (max-width: 767.98px) {
       .dashboard-cases-scroll {
         width: 100%;
@@ -149,7 +176,7 @@
     <div class="row g-4">
       <!-- Case Overview -->
       <div class="col-xl-8">
-        <div class="feature-card h-auto mb-4">
+        <div class="feature-card h-auto mb-4 active-investigations-card">
           <h4 class="mb-4">Active Investigations</h4>
           <div class="table-responsive dashboard-cases-scroll">
             <table class="table table-dark table-hover align-middle dashboard-cases-table">
@@ -172,7 +199,7 @@
                       <div class="progress-bar bg-accent" style="width: 65%;"></div>
                     </div>
                   </td>
-                  <td><button class="btn btn-sm btn-outline-accent">View Report</button></td>
+                  <td><button class="btn btn-sm btn-outline-accent dashboard-case-action-btn">View Report</button></td>
                 </tr>
                 <tr>
                   <td>#SQ-4432</td>
@@ -183,7 +210,7 @@
                       <div class="progress-bar bg-success" style="width: 100%;"></div>
                     </div>
                   </td>
-                  <td><button class="btn btn-sm btn-accent">Download</button></td>
+                  <td><button class="btn btn-sm btn-accent dashboard-case-action-btn">Download</button></td>
                 </tr>
               </tbody>
             </table>
@@ -191,7 +218,7 @@
         </div>
 
         <!-- Chat Component -->
-        <div class="feature-card h-auto">
+        <div class="feature-card h-auto agent-outreach-card">
           <h4 class="mb-4 d-flex justify-content-between">
             Agent Outreach
             <span class="badge bg-danger rounded-circle p-1" style="font-size: 0.5rem;">.</span>

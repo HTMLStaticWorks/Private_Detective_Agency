@@ -150,10 +150,38 @@
     [data-theme="light"] .about-engine-stat span {
       color: var(--text-secondary);
     }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .about-engine-shell .row {
+        align-items: flex-start !important;
+      }
+      .about-engine-shell .col-lg-7 {
+        display: flex;
+        align-items: flex-start;
+      }
+    }
+    @media (width: 1024px) {
+      .about-engine-shell .col-lg-7 {
+        align-self: stretch !important;
+        display: flex;
+        align-items: stretch !important;
+      }
+      .about-engine-visual {
+        height: 100%;
+        min-height: 0;
+      }
+    }
     @media (max-width: 991px) {
       .about-engine-copy {
         max-width: none;
         text-align: center;
+      }
+      .about-engine-shell .col-lg-7 {
+        display: flex;
+        justify-content: center;
+      }
+      .about-engine-visual {
+        width: min(100%, 620px);
+        margin-inline: auto;
       }
       .about-engine-ribbon {
         grid-template-columns: repeat(2, minmax(0, 1fr));
