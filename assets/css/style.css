@@ -932,7 +932,7 @@ footer {
 /* Form Styles */
 .form-control,
 .form-select {
-  background-color: var(--input-bg);
+  background-color: var(--input-bg) !important;
   border: 1px solid var(--input-border);
   color: var(--text-primary);
   padding: 12px 15px;
@@ -942,10 +942,16 @@ footer {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23C9A96E' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
 
-.form-control:focus {
+.form-control:focus,
+.form-select:focus {
   background-color: var(--input-bg);
   border-color: var(--accent-color);
   box-shadow: none;
+  color: var(--text-primary);
+}
+
+.form-select option {
+  background-color: var(--secondary-color);
   color: var(--text-primary);
 }
 
@@ -1463,7 +1469,6 @@ html:not([data-theme="light"]) footer .input-group .form-control::placeholder {
   .nightshade-section h5 {
     text-align: center !important;
   }
-}
   .hero-v2 { padding-top: 100px; text-align: center; }
   .hero-v2 .hero-label { font-size: 0.7rem; padding: 6px 15px; margin-bottom: 1rem; }
   .hero-v2 .hero-title { font-size: 2rem; margin-bottom: 1.5rem; }
