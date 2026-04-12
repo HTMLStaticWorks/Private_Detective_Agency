@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Veritas Investigations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-shield-lock me-2"></i>VERITAS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Reports</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+                    <a href="dashboard.html" class="btn btn-sm btn-dark rounded-circle" title="Dashboard" style="width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-speedometer2"></i>
+                    </a>
+                    <button class="btn btn-sm btn-dark rounded-circle" id="dark-mode-toggle" title="Toggle Theme" style="width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <button class="btn btn-sm btn-outline-premium px-3" id="rtl-toggle">RTL</button>
+                    <a href="login.html" class="btn btn-sm btn-premium">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="hero-page-header text-center py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 hero-content">
+                    <h1 class="display-3 mb-3">Transparent Value.</h1>
+                    <p class="lead opacity-75 mx-auto" style="max-width: 700px;">We offer clear investigation packages designed for common needs, with bespoke options for unique cases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Pricing Tiers -->
+    <section class="py-5">
+        <div class="container py-lg-5">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4">
+                    <div class="p-5 border rounded-4 text-center h-100 dark-card shadow-sm">
+                        <h4 class="mb-3">Discovery</h4>
+                        <p class="text-muted small">Initial verification and basic research.</p>
+                        <h2 class="display-5 fw-bold mb-4">$499<span class="fs-6 fw-normal text-muted">/case</span></h2>
+                        <ul class="list-unstyled text-start mb-5 opacity-75">
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> Basic Background Check</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> Public Record Search</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> Preliminary Report</li>
+                            <li class="mb-2 text-muted"><i class="bi bi-x text-danger me-2"></i> Field Observation</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-premium w-100 py-2">Select Plan</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="p-5 border rounded-4 text-center h-100 dark-card shadow-lg bg-white position-relative overflow-hidden" style="border-color: var(--secondary-color) !important;">
+                        <span class="position-absolute top-0 end-0 bg-gold text-white px-4 py-1 small" style="background-color: var(--secondary-color);">POPULAR</span>
+                        <h4 class="mb-3">Professional</h4>
+                        <p class="text-muted small">Comprehensive personal investigation.</p>
+                        <h2 class="display-5 fw-bold mb-4">$1,299<span class="fs-6 fw-normal text-muted">/case</span></h2>
+                        <ul class="list-unstyled text-start mb-5">
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> Detailed Background & Asset</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> 8 Hours Field Observation</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> Verified Evidence Dossier</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> Dedicated Analyst Email</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-premium w-100 py-2 shadow">Select Plan</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="p-5 border rounded-4 text-center h-100 dark-card shadow-sm">
+                        <h4 class="mb-3">Bespoke</h4>
+                        <p class="text-muted small">Custom scope for complex matters.</p>
+                        <h2 class="display-5 fw-bold mb-4">Contact</h2>
+                        <ul class="list-unstyled text-start mb-5 opacity-75">
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> Multi-jurisdiction Search</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> Unlimited Field Work</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> Legal Presentation Files</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> 24/7 Direct Line Access</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-premium w-100 py-2">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Unique Section: Investment in Resolution -->
+    <section class="investment-resolution py-5 overflow-hidden">
+        <div class="container py-lg-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="resolution-visual position-relative">
+                        <div class="resolution-glow"></div>
+                        <img src="assets/images/pricing-roi.png" alt="Verified Dossier" class="img-fluid rounded-5 shadow-2xl position-relative z-2">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="pe-lg-5">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3">
+                            <span class="dot-indicator"></span>
+                            <h6 class="text-gold fw-bold mb-0 text-uppercase tracking-wider">The Veritas ROI</h6>
+                        </div>
+                        <h2 class="display-3 mb-4 fw-bold">Beyond the Invoice.</h2>
+                        <p class="text-muted mb-4 lead">Our pricing reflects the high-prestige equipment, ethical licensing, and years of forensic experience that ensure your results are undisputed.</p>
+                        
+                        <div class="roi-features mt-5">
+                            <div class="d-flex flex-column align-items-center flex-lg-row align-items-lg-start gap-4 mb-4">
+                                <div class="roi-icon-box">
+                                    <i class="bi bi-shield-lock"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Legal Defensibility</h5>
+                                    <p class="small text-muted mb-0">Every piece of evidence is gathered within strict legal frameworks to ensure it holds weight in court.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column align-items-center flex-lg-row align-items-lg-start gap-4">
+                                <div class="roi-icon-box">
+                                    <i class="bi bi-clock-history"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Time Recovery</h5>
+                                    <p class="small text-muted mb-0">What takes a non-professional weeks to discover, our intelligence network uncovers in hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. What's Included -->
+    <section class="py-5" style="background-color: var(--section-bg);">
+        <div class="container text-center">
+            <h2 class="mb-5">In Every Package</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <i class="bi bi-incognito fs-1 text-gold mb-3" style="color: var(--secondary-color);"></i>
+                    <h5>Absolute Discretion</h5>
+                    <p class="text-muted small">Your identity and the nature of your inquiry are never shared.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-file-earmark-lock fs-1 text-gold mb-3" style="color: var(--secondary-color);"></i>
+                    <h5>Secure Reporting</h5>
+                    <p class="text-muted small">Encrypted delivery of all case findings and physical evidence summaries.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-person-check fs-1 text-gold mb-3" style="color: var(--secondary-color);"></i>
+                    <h5>Professional Liaison</h5>
+                    <p class="text-muted small">A human being to guide you through the process, not an automated system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Privacy Guarantee -->
+    <section class="py-5">
+        <div class="container">
+             <div class="p-5 theme-highlight-block rounded-4 text-center">
+                <h3 class="mb-4">Billing & Privacy</h3>
+                <p class="opacity-75 mx-auto mb-4" style="max-width: 600px;">We understand that privacy extends to your financial records. We offer discreet billing descriptors and alternative payment methods including cryptocurrency for complete anonymity.</p>
+                <div class="d-flex justify-content-center gap-4 fs-4 opacity-50">
+                    <i class="bi bi-credit-card"></i>
+                    <i class="bi bi-currency-bitcoin"></i>
+                    <i class="bi bi-wallet2"></i>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-block mb-4" href="index.html" id="footer-logo">
+                        <i class="bi bi-shield-lock me-2"></i>VERITAS
+                    </a>
+                    <p class="text-muted mb-4">Veritas Investigations provides premium, discreet, and ethical investigative services for personal and professional needs. We empower you with the truth.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="blog.html" class="footer-link">Reports</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h5 class="mb-4">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="footer-link">Private Consultation</a></li>
+                        <li><a href="services.html" class="footer-link">Evidence Gathering</a></li>
+                        <li><a href="services.html" class="footer-link">Background Verification</a></li>
+                        <li><a href="services.html" class="footer-link">Missing Persons</a></li>
+                        <li><a href="services.html" class="footer-link">Asset Search</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-muted small">Stay informed about safety tips and agency updates.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-premium" type="button"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-10">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted small mb-0">&copy; 2026 Veritas Investigations. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="#" class="text-muted small me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted small">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

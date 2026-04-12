@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Veritas Investigations Insights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-shield-lock me-2"></i>VERITAS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Reports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+                    <a href="dashboard.html" class="btn btn-sm btn-dark rounded-circle" title="Dashboard" style="width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-speedometer2"></i>
+                    </a>
+                    <button class="btn btn-sm btn-dark rounded-circle" id="dark-mode-toggle" title="Toggle Theme" style="width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <button class="btn btn-sm btn-outline-premium px-3" id="rtl-toggle">RTL</button>
+                    <a href="login.html" class="btn btn-sm btn-premium">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5" style="background-color: var(--section-bg);">
+        <div class="container py-lg-5 text-center">
+            <h1 class="display-3 mb-3">Insights & Guidance.</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;">Professional perspectives on safety, personal discovery, and the importance of verified truth.</p>
+        </div>
+    </section>
+
+    <!-- 1. Featured Post -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <img src="assets/images/blog-1.png" class="img-fluid rounded-4 shadow featured-blog-img" alt="Featured Article">
+                </div>
+                <div class="col-lg-5 text-center text-lg-start">
+                    <span class="badge bg-gold text-dark mb-3" style="background-color: var(--secondary-color);">Featured</span>
+                    <h2 class="display-5 mb-4">Protecting Your Trust: A Guide to Background Verification.</h2>
+                    <p class="text-muted mb-4">In an age of digital identities, verifying the truth can be complex. Learn how professional investigators separate fact from fiction without compromising ethics.</p>
+                    <a href="blog.html" class="btn btn-premium">Read Selection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Blog Grid (6 even cards) -->
+    <section class="py-5" style="background-color: var(--section-bg);">
+        <div class="container py-lg-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/blog-privacy.png" alt="Safety Tips">
+                        </div>
+                        <div class="card-body">
+                            <span class="small text-gold text-uppercase mb-2 d-block" style="color: var(--secondary-color);">Personal Safety</span>
+                            <h3>Managing Personal Privacy Connected World</h3>
+                            <p class="text-muted small">Practical steps for individuals to maintain their digital and physical discretion.</p>
+                            <div class="card-footer-btn">
+                                <a href="blog.html" class="btn btn-link text-gold p-0 text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/blog-genealogy.png" alt="Genealogy">
+                        </div>
+                        <div class="card-body">
+                            <span class="small text-gold text-uppercase mb-2 d-block" style="color: var(--secondary-color);">Case Study</span>
+                            <h3>Tracing Lost Generations: A Human Approach</h3>
+                            <p class="text-muted small">The emotional journey of reconnecting families through historical records.</p>
+                            <div class="card-footer-btn">
+                                <a href="blog.html" class="btn btn-link text-gold p-0 text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/blog-rules.png" alt="Evidence">
+                        </div>
+                        <div class="card-body">
+                            <span class="small text-gold text-uppercase mb-2 d-block" style="color: var(--secondary-color);">Ethical Research</span>
+                            <h3>The Importance of Admissible Evidence</h3>
+                            <p class="text-muted small">Understanding why how you gather information matters as much as the findings.</p>
+                            <div class="card-footer-btn">
+                                <a href="blog.html" class="btn btn-link text-gold p-0 text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/blog-safety.png" alt="Safety Tips">
+                        </div>
+                        <div class="card-body">
+                            <span class="small text-gold text-uppercase mb-2 d-block" style="color: var(--secondary-color);">Personal Safety</span>
+                            <h3>Safety Tips for First-Time Consultations</h3>
+                            <p class="text-muted small">How to prepare for your first meeting with a professional investigator.</p>
+                            <div class="card-footer-btn">
+                                <a href="blog.html" class="btn btn-link text-gold p-0 text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/blog-finance.png" alt="Genealogy">
+                        </div>
+                        <div class="card-body">
+                            <span class="small text-gold text-uppercase mb-2 d-block" style="color: var(--secondary-color);">Asset Analysis</span>
+                            <h3>Financial Clarity in Family Settlements</h3>
+                            <p class="text-muted small">The role of professional research in achieving fair settlements.</p>
+                            <div class="card-footer-btn">
+                                <a href="blog.html" class="btn btn-link text-gold p-0 text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/blog-proof.png" alt="Evidence">
+                        </div>
+                        <div class="card-body">
+                            <span class="small text-gold text-uppercase mb-2 d-block" style="color: var(--secondary-color);">Trends</span>
+                            <h3>The Future of Professional Discretion</h3>
+                            <p class="text-muted small">How the human element remains irreplaceable in investigative work.</p>
+                            <div class="card-footer-btn">
+                                <a href="blog.html" class="btn btn-link text-gold p-0 text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Unique Showcase: Tactical Gear & Methodology -->
+    <section class="investigative-archive py-5 overflow-hidden">
+        <div class="container py-lg-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="archive-image-wrapper p-3 border rounded-5" style="border-color: rgba(197, 160, 89, 0.2) !important;">
+                        <img src="assets/images/tactical-gear.png" alt="Investigation Gear" class="img-fluid rounded-5 shadow-2xl">
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="ps-lg-5">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3">
+                            <span class="dot-indicator"></span>
+                            <h6 class="text-gold fw-bold mb-0 text-uppercase tracking-wider">Behind the Scenes</h6>
+                        </div>
+                        <h2 class="display-3 mb-4 fw-bold">The Science of Observation.</h2>
+                        <p class="text-muted mb-4 lead">Effective investigation isn't just about what you see, but how you document it. Our methodology combines high-precision optics with secure metadata logging.</p>
+                        
+                        <div class="row g-4 mt-2">
+                            <div class="col-sm-6">
+                                <div class="p-4 border rounded-4 hover-lift h-100 bg-light-card text-center text-lg-start">
+                                    <h5 class="mb-2"><i class="bi bi-camera me-2 text-gold"></i> Optics</h5>
+                                    <p class="small text-muted mb-0">High-dynamic range lenses for low-light evidence capture without detection.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="p-4 border rounded-4 hover-lift h-100 bg-light-card text-center text-lg-start">
+                                    <h5 class="mb-2"><i class="bi bi-hdd-network me-2 text-gold"></i> Integrity</h5>
+                                    <p class="small text-muted mb-0">End-to-end encrypted storage with dual-witness verification protocols.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Newsletter Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="p-4 p-md-5 border rounded-4 theme-highlight-block text-center text-md-start">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-6">
+                                <h3 class="mb-2">Never miss an insight.</h3>
+                                <p class="opacity-75 mb-0">Join our mailing list for monthly professional guidance.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Your Email" style="padding: 12px 20px;">
+                                    <button class="btn btn-premium px-4" type="button">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-block mb-4" href="index.html" id="footer-logo">
+                        <i class="bi bi-shield-lock me-2"></i>VERITAS
+                    </a>
+                    <p class="text-muted mb-4">Veritas Investigations provides premium, discreet, and ethical investigative services for personal and professional needs. We empower you with the truth.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="blog.html" class="footer-link">Reports</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h5 class="mb-4">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="footer-link">Private Consultation</a></li>
+                        <li><a href="services.html" class="footer-link">Evidence Gathering</a></li>
+                        <li><a href="services.html" class="footer-link">Background Verification</a></li>
+                        <li><a href="services.html" class="footer-link">Missing Persons</a></li>
+                        <li><a href="services.html" class="footer-link">Asset Search</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-muted small">Stay informed about safety tips and agency updates.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-premium" type="button"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-10">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted small mb-0">&copy; 2026 Veritas Investigations. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="#" class="text-muted small me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted small">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

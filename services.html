@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Veritas Investigations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-shield-lock me-2"></i>VERITAS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Reports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+                    <a href="dashboard.html" class="btn btn-sm btn-dark rounded-circle" title="Dashboard" style="width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-speedometer2"></i>
+                    </a>
+                    <button class="btn btn-sm btn-dark rounded-circle" id="dark-mode-toggle" title="Toggle Theme" style="width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <button class="btn btn-sm btn-outline-premium px-3" id="rtl-toggle">RTL</button>
+                    <a href="login.html" class="btn btn-sm btn-premium">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5" style="background-color: var(--section-bg);">
+        <div class="container py-lg-5 text-center">
+            <h1 class="display-3 mb-3">Our Specialized Services.</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;">Discrete, professional, and thorough. We handle a wide range of investigative needs with human-centric care.</p>
+        </div>
+    </section>
+
+    <!-- 1. Services Grid (6 cards) -->
+    <section class="py-5">
+        <div class="container py-lg-5">
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/service-consult-alt.png" alt="Private Consultation">
+                        </div>
+                        <div class="card-body">
+                            <h3>Private Consultation</h3>
+                            <p class="text-muted">A deep dive into your concerns with expert guidance and absolute confidentiality.</p>
+                            <div class="card-footer-btn">
+                                <a href="services.html" class="btn btn-outline-premium w-100">Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/service-family-alt.png" alt="Family Matters">
+                        </div>
+                        <div class="card-body">
+                            <h3>Family Investigations</h3>
+                            <p class="text-muted">Sensitive handling of domestic situations, finding clarity where it matters most.</p>
+                            <div class="card-footer-btn">
+                                <a href="services.html" class="btn btn-outline-premium w-100">Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/service-bg-alt.png" alt="Verification">
+                        </div>
+                        <div class="card-body">
+                            <h3>Background Checks</h3>
+                            <p class="text-muted">Detailed verification of personal and professional histories for complete peace of mind.</p>
+                            <div class="card-footer-btn">
+                                <a href="services.html" class="btn btn-outline-premium w-100">Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/service-missing-alt.png" alt="Missing Persons">
+                        </div>
+                        <div class="card-body">
+                            <h3>Missing Persons</h3>
+                            <p class="text-muted">Reconnecting families and locating individuals with persistence and discretion.</p>
+                            <div class="card-footer-btn">
+                                <a href="services.html" class="btn btn-outline-premium w-100">Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/service-ev-alt.png" alt="Legal Support">
+                        </div>
+                        <div class="card-body">
+                            <h3>Evidence Collection</h3>
+                            <p class="text-muted">Gathering admissible facts and documentation for personal or legal procedures.</p>
+                            <div class="card-footer-btn">
+                                <a href="services.html" class="btn btn-outline-premium w-100">Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/service-asset-alt.png" alt="Digital">
+                        </div>
+                        <div class="card-body">
+                            <h3>Asset & Financial</h3>
+                            <p class="text-muted">Uncovering hidden assets and financial trails with expert analysis and research.</p>
+                            <div class="card-footer-btn">
+                                <a href="services.html" class="btn btn-outline-premium w-100">Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Methodology -->
+    <section class="py-5" style="background-color: var(--section-bg);">
+        <div class="container py-lg-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 text-center text-lg-start">
+                    <h2 class="display-5 mb-4">How We Work.</h2>
+                    <p class="text-muted">Every case is unique. We adapt our methods to your specific needs while maintaining our core standards of excellence and discretion.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="p-4 bg-white border rounded-3 h-100 shadow-sm dark-card text-center text-lg-start">
+                                <h5>1. Discovery</h5>
+                                <p class="small text-muted mb-0">We listen to your story and identify the key goals of the investigation.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="p-4 bg-white border rounded-3 h-100 shadow-sm dark-card text-center text-lg-start">
+                                <h5>2. Execution</h5>
+                                <p class="small text-muted mb-0">Our team operates in the field and through research to gather facts.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="p-4 bg-white border rounded-3 h-100 shadow-sm dark-card text-center text-lg-start">
+                                <h5>3. Verification</h5>
+                                <p class="small text-muted mb-0">Every piece of evidence is cross-checked for absolute accuracy.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="p-4 bg-white border rounded-3 h-100 shadow-sm dark-card text-center text-lg-start">
+                                <h5>4. Reporting</h5>
+                                <p class="small text-muted mb-0">A comprehensive report is delivered securely to you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Industry Standards -->
+    <section class="py-5">
+        <div class="container py-lg-5 text-center">
+            <h2 class="display-6 mb-5">Professional Affiliations</h2>
+            <div class="row g-5 align-items-center justify-content-center">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <img src="assets/images/affil-1.png" alt="Certified PI" class="img-fluid mb-4" style="height: 120px; object-fit: contain;">
+                    <p class="small text-muted fw-bold">Certified PI</p>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <img src="assets/images/affil-2.png" alt="Ethical Award" class="img-fluid mb-4" style="height: 120px; object-fit: contain;">
+                    <p class="small text-muted fw-bold">Ethical Award</p>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <img src="assets/images/affil-3.png" alt="Legal Partner" class="img-fluid mb-4" style="height: 120px; object-fit: contain;">
+                    <p class="small text-muted fw-bold">Legal Partner</p>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <img src="assets/images/affil-4.png" alt="Global Network" class="img-fluid mb-4" style="height: 120px; object-fit: contain;">
+                    <p class="small text-muted fw-bold">Global Network</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CTA -->
+    <section class="py-5 theme-highlight-block text-center border-0 border-top border-bottom">
+        <div class="container py-4">
+            <h2>Need a Custom Solution?</h2>
+            <p class="lead opacity-75 mb-4">If you don't see what you're looking for, reach out to us. We handle bespoke cases regularly.</p>
+            <a href="contact.html" class="btn btn-premium btn-lg">Contact an Agent</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-block mb-4" href="index.html" id="footer-logo">
+                        <i class="bi bi-shield-lock me-2"></i>VERITAS
+                    </a>
+                    <p class="text-muted mb-4">Veritas Investigations provides premium, discreet, and ethical investigative services for personal and professional needs. We empower you with the truth.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="blog.html" class="footer-link">Reports</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h5 class="mb-4">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="footer-link">Private Consultation</a></li>
+                        <li><a href="services.html" class="footer-link">Evidence Gathering</a></li>
+                        <li><a href="services.html" class="footer-link">Background Verification</a></li>
+                        <li><a href="services.html" class="footer-link">Missing Persons</a></li>
+                        <li><a href="services.html" class="footer-link">Asset Search</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-muted small">Stay informed about safety tips and agency updates.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-premium" type="button"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-10">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted small mb-0">&copy; 2026 Veritas Investigations. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="#" class="text-muted small me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted small">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
