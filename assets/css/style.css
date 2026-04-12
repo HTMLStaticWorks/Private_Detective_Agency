@@ -700,9 +700,6 @@ a:not(.navbar-brand):not(.btn):not(.nav-link):not(.sidebar-link):hover {
     color: #fff; 
 }
 
-.dashboard-wrapper {
-    /* Base wrapper state */
-}
 
 /* Mobile Navbar Layout Fix */
 @media (max-width: 991px) {
@@ -990,8 +987,6 @@ a:not(.navbar-brand):not(.btn):not(.nav-link):not(.sidebar-link):hover {
     }
     .forensics-main-img img {
         height: 400px;
-    }
-    .forensics-content {
     }
 }
 
