@@ -9,8 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* ===== Register Page — Tablet Fix (768px–1024px) ===== */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            /* Remove wasted navbar spacing — auth pages have no navbar */
+            body.auth-page {
+                padding-top: 0 !important;
+            }
+            /* Force container to fill the viewport width properly */
+            body.auth-page > .container {
+                width: 100vw !important;
+                max-width: 100vw !important;
+                padding-left: 2rem !important;
+                padding-right: 2rem !important;
+            }
+            /* Card: explicit sizing, centered, not full-screen */
+            body.auth-page .register-card {
+                max-width: 560px !important;
+                min-width: 460px !important;
+                width: 85% !important;
+                margin: 0 auto !important;
+                padding: 3rem 3rem !important;
+            }
+        }
+    </style>
 </head>
-<body class="d-flex align-items-center justify-content-center py-5 min-vh-100 position-relative">
+<body class="auth-page d-flex align-items-center justify-content-center py-5 min-vh-100 position-relative">
 
     <!-- Top Right Controls -->
     <div class="position-absolute top-0 end-0 p-4 d-flex gap-2" style="z-index: 1000;">
@@ -22,8 +46,8 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-5">
-                <div class="p-5 border-0 rounded-4 shadow-lg dark-card">
+            <div class="col-md-12 col-lg-5 register-card-wrapper">
+                <div class="p-5 border-0 rounded-4 shadow-lg dark-card register-card">
                     <!-- Brand Inside Card -->
                     <div class="text-center mb-4">
                         <a href="index.html" class="navbar-brand text-dark fs-3 text-decoration-none fw-bold" style="color: var(--secondary-color) !important;">

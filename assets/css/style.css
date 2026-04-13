@@ -385,6 +385,8 @@ footer {
 
 .dashboard-sidebar {
     width: 280px;
+    min-width: 280px;       /* Prevents sidebar from shrinking below its set width */
+    flex-shrink: 0;         /* Prevents compression when content area needs more space */
     background-color: #1a1a1a;
     color: #fff;
     padding: 2rem;
@@ -614,6 +616,13 @@ footer {
 .dark-card:hover, .bg-light-card:hover { 
     border-color: var(--secondary-color) !important; 
     transform: translateY(-5px); 
+}
+
+/* Disable hover lift for panels that should stay static (e.g. message center) */
+.dark-card.no-hover:hover,
+.bg-light-card.no-hover:hover {
+    transform: none !important;
+    border-color: var(--border-color) !important;
 }
 
 /* Theme-Consistent Highlight Sections (CTA, Newsletter, Billing) */
@@ -1210,4 +1219,24 @@ a:not(.navbar-brand):not(.btn):not(.nav-link):not(.sidebar-link):hover {
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
     z-index: 3;
     animation: float 4s ease-in-out infinite;
+}
+
+/* ===== Dashboard Overview — Text Alignment Fix (992px–1200px) ===== */
+/* Targets 1024×1366 viewport where sidebar (280px) + col-lg-8 leaves tight space */
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* Reduce heading so it stays on one line alongside the Upload button */
+    .dashboard-page .case-card h4 {
+        font-size: 1.1rem !important;
+    }
+
+    /* Tighter padding on stat mini-cards so label text fits on one line */
+    .dashboard-page .case-card .row.g-3 .p-3 {
+        padding: 0.6rem 0.4rem !important;
+    }
+
+    /* Slightly smaller stat label text */
+    .dashboard-page .case-card .row.g-3 p.x-small {
+        font-size: 0.68rem !important;
+        line-height: 1.2 !important;
+    }
 }
